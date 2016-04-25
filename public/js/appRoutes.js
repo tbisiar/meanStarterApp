@@ -7,11 +7,24 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
       controller: 'MainController'
     })
 
-    // nerds page that will use the NerdController
-    .when('/nerds', {
-      templateUrl: 'views/nerd.html',
-      controller: 'NerdController'
+    // engineer page
+    .when('/engineer', {
+      templateUrl: 'views/engineer.html',
+      controller: 'EngController'
+    })
+
+    // explore page
+    .when('/explore', {
+      templateUrl: 'views/explore.html',
+      controller: 'ExploreController'
+    })
+
+    // innovate page
+    .when('/innovate', {
+      templateUrl: 'views/innovate.html',
+      controller: 'InnovateController'
     });
+
   $locationProvider.html5Mode(true);
 }]);
 
